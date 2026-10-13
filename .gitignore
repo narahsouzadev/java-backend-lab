@@ -1,0 +1,56 @@
+# Compilação e Artefatos do Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+*.class
+*.war
+*.ear
+*.nar
+*.jar
+
+# Logs e relatórios de erro
+*.log
+hs_err_pid*
+replay_pid*
+
+# IntelliJ IDEA (ignora toda a configuração local da IDE)
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# VS Code
+.vscode/
+
+# Arquivos de Sistema Operacional (Linux, Mac e Windows)
+.DS_Store
+Thumbs.db
+*~
+*.swp
+
+# Variáveis de ambiente e segredos locais (banco de dados, chaves)
+.env
+.env.*
+application-local.properties
+application-local.yml

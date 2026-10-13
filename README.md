@@ -1,1 +1,58 @@
-# java-dev-lab
+# ☕ Java Backend Lab
+
+Welcome to my Java Backend Lab repository. This repository documents my practical journey in mastering Java and backend engineering from the ground up, starting from foundational syntax and core logic to building robust APIs, persistence layers, and microservices.
+
+---
+
+## 🎯 Repository Purpose
+
+* Build clean, maintainable, and idiomatic Java applications.
+* Master core programming concepts without relying prematurely on heavy abstractions or frameworks.
+* Develop a structured, production-ready portfolio following industry standards and best practices:
+  * **Naming conventions:** PascalCase for classes, camelCase for methods/variables, lowercase for packages, and kebab-case for repository/project folders.
+  * **English-only code:** Variables, methods, documentation, commit messages, and CLI interfaces written in English.
+  * **Conventional Commits:** Clear, semantic commit history (e.g., feat, fix, refactor, docs).
+
+---
+
+## 🗺️ Learning Roadmap
+
+### Phase 1: Core Fundamentals & CLI Applications (Current)
+* Primitives, relational/logical operators, control flow (if/else, switch), loops (while, for).
+* Interactive CLI programs using Scanner, input validation, and clean console formatting.
+* Resource management and proper stream closing.
+
+### Phase 2: Object-Oriented Programming & Data Structures
+* Encapsulation, inheritance, polymorphism, interfaces, and abstract classes.
+* Java Collections Framework (List, Set, Map) and Exception Handling.
+
+### Phase 3: Persistence, Clean Architecture & APIs
+* Relational databases (PostgreSQL), JDBC, JPA/Hibernate.
+* RESTful API design, HTTP protocols, and layered architecture.
+
+### Phase 4: Enterprise Backend & Cloud Ecosystem
+* Spring Boot, Spring Security, automated testing (JUnit, Mockito).
+* Docker, CI/CD pipelines, and cloud deployment.
+
+---
+
+## 📂 Projects Catalog
+
+| Project | Description | Core Concepts | Documentation |
+| :--- | :--- | :--- | :--- |
+| **TallyCounter** | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling | [View Details](src/main/java/io/github/narahsouzadev/tallycounter/) |
+
+---
+
+## 🛠️ Tech Stack & Environment
+
+* **Language:** Java 17+ / 21 LTS
+* **Build Tool:** Maven / Gradle
+* **IDE:** IntelliJ IDEA
+* **Version Control:** Git & GitHub (Conventional Commits)
+
+---
+
+## 👤 Author
+
+Developed by **Narah Souza** ([GitHub Profile](https://github.com/narahsouzadev)).

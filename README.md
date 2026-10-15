@@ -38,9 +38,9 @@ Welcome to my Java Backend Lab repository. This repository documents my practica
 
 ## 📂 Projects Catalog
 
-| Project | Description | Core Concepts | Documentation |
-| :--- | :--- | :--- | :--- |
-| **TallyCounter** | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling | [View Details](src/main/java/io/github/narahsouzadev/tallycounter/) |
+| Project | Description | Core Concepts |
+| :--- | :--- | :--- |
+| [**TallyCounter**](src/main/java/io/github/narahsouzadev/tallycounter/) | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling |
 
 ---
 

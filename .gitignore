@@ -1,4 +1,4 @@
-# Compilação e Artefatos do Maven
+# Maven compilation and build artifacts
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
@@ -9,12 +9,12 @@ target/
 *.nar
 *.jar
 
-# Logs e relatórios de erro
+# Logs and crash reports
 *.log
 hs_err_pid*
 replay_pid*
 
-# IntelliJ IDEA (ignora toda a configuração local da IDE)
+# IntelliJ IDEA (ignores all local IDE configuration)
 .idea/
 *.iws
 *.iml
@@ -43,13 +43,13 @@ build/
 # VS Code
 .vscode/
 
-# Arquivos de Sistema Operacional (Linux, Mac e Windows)
+# Operating System files (Linux, macOS, and Windows)
 .DS_Store
 Thumbs.db
 *~
 *.swp
 
-# Variáveis de ambiente e segredos locais (banco de dados, chaves)
+# Environment variables and local secrets (databases, keys)
 .env
 .env.*
 application-local.properties

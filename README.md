@@ -2,8 +2,6 @@
 
 Welcome to my Java Backend Lab repository. This repository documents my practical journey in mastering Java and backend engineering from the ground up, starting from foundational syntax and core logic to building robust APIs, persistence layers, and microservices.
 
----
-
 ## 🎯 Repository Purpose
 
 * Build clean, maintainable, and idiomatic Java applications.
@@ -12,8 +10,6 @@ Welcome to my Java Backend Lab repository. This repository documents my practica
   * **Naming conventions:** PascalCase for classes, camelCase for methods/variables, lowercase for packages, and kebab-case for repository/project folders.
   * **English-only code:** Variables, methods, documentation, commit messages, and CLI interfaces written in English.
   * **Conventional Commits:** Clear, semantic commit history (e.g., feat, fix, refactor, docs).
-
----
 
 ## 🗺️ Learning Roadmap
 
@@ -34,15 +30,13 @@ Welcome to my Java Backend Lab repository. This repository documents my practica
 * Spring Boot, Spring Security, automated testing (JUnit, Mockito).
 * Docker, CI/CD pipelines, and cloud deployment.
 
----
-
 ## 📂 Projects Catalog
 
 | Project | Description | Core Concepts |
 | :--- | :--- | :--- |
-| [**TallyCounter**](src/main/java/io/github/narahsouzadev/tallycounter/) | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling |
+| [**Tally Counter**](src/main/java/io/github/narahsouzadev/tallycounter/) | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling |
+| [**BMI Calculator**](src/main/java/io/github/narahsouzadev/bmicalculator/) | In progress. | In progress. |
 
----
 
 ## 🛠️ Tech Stack & Environment
 
@@ -50,8 +44,6 @@ Welcome to my Java Backend Lab repository. This repository documents my practica
 * **Build Tool:** Maven / Gradle
 * **IDE:** IntelliJ IDEA
 * **Version Control:** Git & GitHub (Conventional Commits)
-
----
 
 ## 👤 Author
 

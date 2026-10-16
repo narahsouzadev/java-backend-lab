@@ -12,29 +12,54 @@ public class BMICalculator {
         System.out.println("================================");
 
         System.out.println("Enter your weight in kilograms: ");
+
+        if (!scanner.hasNextDouble()) {
+            System.out.println("Invalid input. Please enter a valid number.");
+            scanner.close();
+            return;
+        }
+
         double weight = scanner.nextDouble();
         System.out.println("================================");
 
+        if (weight <=0) {
+            System.out.println("The value entered must be greater than zero.");
+            scanner.close();
+            return;
+        }
+
         System.out.println("Enter your height in meters: ");
+
+        if (!scanner.hasNextDouble()) {
+            System.out.println("Invalid input. Please enter a valid number.");
+            scanner.close();
+            return;
+        }
         double height = scanner.nextDouble();
         System.out.println("================================");
 
-        double bmi = weight / (height * height); // Body Mass Index
+         if (height <=0) {
+            System.out.println("The value entered must be greater than zero.");
+            scanner.close();
+            return;
+         }
 
-        System.out.printf("Your BMI is %.2f.%n", bmi);
+         double bmi = weight / (height * height); // Body Mass Index
 
-        if (bmi < 18.5) {
+         System.out.printf("Your BMI is %.2f.%n", bmi);
+
+         if (bmi < 18.5) {
             System.out.println("Below 18.5: Underweight.");
-        } else if (bmi < 25.0) {
+         } else if (bmi < 25.0) {
             System.out.println("Between 18.5 and 24.9: Normal weight.");
-        } else if (bmi < 30.0) {
+         } else if (bmi < 30.0) {
             System.out.println("Between 25.0 and 29.9: Overweight.");
-        } else {
+         } else {
             System.out.println("30.0 or higher: Obesity.");
-        }
+         }
 
-        System.out.println("================================");
+         System.out.println("================================");
 
-        scanner.close();
+         scanner.close();
     }
 }

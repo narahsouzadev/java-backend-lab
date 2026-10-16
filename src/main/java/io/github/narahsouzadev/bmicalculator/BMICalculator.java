@@ -1,9 +1,11 @@
 package io.github.narahsouzadev.bmicalculator;
 import java.util.Scanner;
+import java.util.Locale;
 
 public class BMICalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.US);
 
         System.out.println("================================");
         System.out.println("BODY MASS INDEX (BMI) CALCULATOR");
@@ -19,7 +21,7 @@ public class BMICalculator {
 
         double bmi = weight / (height * height); // Body Mass Index
 
-        System.out.printf("Your BMI is %.2f%n", bmi);
+        System.out.printf("Your BMI is %.2f.%n", bmi);
 
         if (bmi < 18.5) {
             System.out.println("Below 18.5: Underweight.");

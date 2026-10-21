@@ -7,14 +7,31 @@ public class ParityAndSignChecker {
 
         System.out.println("Enter a number: ");
 
-        double number = scanner.nextDouble();
+        int number = scanner.nextInt();
 
-        double module = number % 2;
+        int module = number % 2;
 
-        if (module == 0) {
-            System.out.println("The number entered is even.");
+        boolean parityCheck = module == 0; // true: even, false: odd
+        String parity;
+
+        if (parityCheck) {
+            parity = "even";
         } else {
-            System.out.println("The number entered is odd.");
+            parity = "odd";
         }
+
+        boolean signCheck = number > 0; // true: positive, false: negative
+        boolean neutralCheck = number == 0; // true: neutral
+        String sign;
+
+        if (neutralCheck) {
+            sign = "neutral.";
+        } else if (signCheck) {
+            sign = "positive.";
+        } else {
+            sign = "negative.";
+        }
+
+        System.out.println("The number entered is " + parity + " and " + sign);
     }
 }

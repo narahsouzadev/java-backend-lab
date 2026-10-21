@@ -7,25 +7,29 @@ public class BMICalculator {
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.US);
 
-        System.out.println("============================================");
+        String dividingLine = "============================================";
+        String invalidInputMessage = "Invalid input. Please enter a valid number.";
+        String invalidValueMessage = "The value entered must be greater than zero.";
+
+        System.out.println(dividingLine);
         System.out.println("===== BODY MASS INDEX (BMI) CALCULATOR =====");
-        System.out.println("============================================");
+        System.out.println(dividingLine);
 
         System.out.println("Enter your weight in kilograms: ");
 
         if (!scanner.hasNextDouble()) {
-            System.out.println("Invalid input. Please enter a valid number.");
-            System.out.println("============================================");
+            System.out.println(invalidInputMessage);
+            System.out.println(dividingLine);
             scanner.close();
             return;
         }
 
         double weight = scanner.nextDouble();
-        System.out.println("============================================");
+        System.out.println(dividingLine);
 
         if (weight <=0) {
-            System.out.println("The value entered must be greater than zero.");
-            System.out.println("============================================");
+            System.out.println(invalidValueMessage);
+            System.out.println(dividingLine);
             scanner.close();
             return;
         }
@@ -33,17 +37,17 @@ public class BMICalculator {
         System.out.println("Enter your height in centimeters: ");
 
         if (!scanner.hasNextInt()) {
-            System.out.println("Invalid input. Please enter a valid number.");
-            System.out.println("============================================");
+            System.out.println(invalidInputMessage);
+            System.out.println(dividingLine);
             scanner.close();
             return;
         }
         int height = scanner.nextInt();
-        System.out.println("============================================");
+        System.out.println(dividingLine);
 
          if (height <=0) {
-            System.out.println("The value entered must be greater than zero.");
-            System.out.println("============================================");
+            System.out.println(invalidValueMessage);
+            System.out.println(dividingLine);
             scanner.close();
             return;
          }
@@ -63,7 +67,7 @@ public class BMICalculator {
             System.out.println("30.0 or higher: Obesity.");
          }
 
-         System.out.println("============================================");
+        System.out.println(dividingLine);
 
          scanner.close();
     }

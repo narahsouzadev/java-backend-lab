@@ -28,14 +28,14 @@ public class BMICalculator {
             return;
         }
 
-        System.out.println("Enter your height in meters: ");
+        System.out.println("Enter your height in centimeters: ");
 
-        if (!scanner.hasNextDouble()) {
+        if (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter a valid number.");
             scanner.close();
             return;
         }
-        double height = scanner.nextDouble();
+        int height = scanner.nextInt();
         System.out.println("================================");
 
          if (height <=0) {
@@ -44,9 +44,10 @@ public class BMICalculator {
             return;
          }
 
-         double bmi = weight / (height * height); // Body Mass Index
+         double heightInMeters = height / 100.0;
+         double bmi = weight / (heightInMeters * heightInMeters); // Body Mass Index
 
-         System.out.printf("Your BMI is %.2f.%n", bmi);
+         System.out.printf(Locale.US,"Your BMI is %.2f%n", bmi);
 
          if (bmi < 18.5) {
             System.out.println("Below 18.5: Underweight.");

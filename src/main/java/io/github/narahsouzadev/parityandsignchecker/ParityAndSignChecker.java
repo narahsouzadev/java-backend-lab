@@ -11,7 +11,7 @@ public class ParityAndSignChecker {
 
         double module = number % 2;
 
-        if (module == 0 && number > 0) {
+        if (module == 0) {
             System.out.println("The number entered is even.");
         } else {
             System.out.println("The number entered is odd.");

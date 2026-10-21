@@ -35,7 +35,7 @@ Welcome to my Java Backend Lab repository. This repository documents my practica
 | Project | Description | Core Concepts |
 | :--- | :--- | :--- |
 | [**Tally Counter**](src/main/java/io/github/narahsouzadev/tallycounter/) | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling |
-| [**BMI Calculator**](src/main/java/io/github/narahsouzadev/bmicalculator/) | In progress. | In progress. |
+| [**BMI Calculator**](src/main/java/io/github/narahsouzadev/bmicalculator/) | CLI tool that calculates Body Mass Index, validates user inputs, and displays WHO weight status categories. | Input validation (hasNextDouble/hasNextInt), Locale management (Locale.US), formatted output (printf), conditional logic (if/else), resource management (close) |
 
 
 ## 🛠️ Tech Stack & Environment

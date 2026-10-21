@@ -33,5 +33,6 @@ public class ParityAndSignChecker {
         }
 
         System.out.println("The number entered is " + parity + " and " + sign);
+        scanner.close();
     }
 }

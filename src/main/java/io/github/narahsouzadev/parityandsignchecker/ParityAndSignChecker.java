@@ -7,6 +7,12 @@ public class ParityAndSignChecker {
 
         System.out.println("Enter a number: ");
 
+        if (!scanner.hasNextInt()) {
+            System.out.println("Invalid input. Please enter an integer.");
+            scanner.close();
+            return;
+        }
+
         int number = scanner.nextInt();
 
         int module = number % 2;

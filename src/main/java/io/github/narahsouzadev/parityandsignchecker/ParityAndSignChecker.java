@@ -31,14 +31,14 @@ public class ParityAndSignChecker {
         String sign;
 
         if (neutralCheck) {
-            sign = "neutral.";
+            sign = "neither positive nor negative.";
         } else if (signCheck) {
             sign = "positive.";
         } else {
             sign = "negative.";
         }
 
-        System.out.println("The number entered is " + parity + " and " + sign);
+        System.out.println("The number entered is " + parity + " and is " + sign);
         scanner.close();
     }
 }

@@ -37,6 +37,7 @@ Welcome to my Java Backend Lab repository. This repository documents my practica
 | [**Tally Counter**](src/main/java/io/github/narahsouzadev/tallycounter/) | Interactive terminal counter with increment, decrement, reset, and quit controls. | Primitive types (int), while loop, if/else branching, Scanner input handling |
 | [**BMI Calculator**](src/main/java/io/github/narahsouzadev/bmicalculator/) | CLI tool that calculates Body Mass Index, validates user inputs, and displays WHO weight status categories. | Input validation (hasNextDouble/hasNextInt), Locale management (Locale.US), formatted output (printf), conditional logic (if/else), resource management (close) |
 | [**Parity and Sign Checker**](src/main/java/io/github/narahsouzadev/parityandsignchecker/) | CLI tool that analyzes an integer to determine its parity (even/odd) and sign (positive, negative, or neutral zero). | Modulo operator (%), comparison operators, nested/chained conditional logic (if/else if/else), input validation (hasNextInt), resource management (close) |
+| [**Coin Flip**](src/main/java/io/github/narahsouzadev/coinflip/) | Interactive CLI coin toss simulator featuring binary outcome generation, interactive replay menu, and defensive input validation. | Pseudo-random generation (Random.nextBoolean), control flow (while loop, switch statement), exception prevention (hasNextInt), resource management (close) |
 
 
 ## 🛠️ Tech Stack & Environment

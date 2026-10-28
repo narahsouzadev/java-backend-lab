@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 public class DiceRoller {
-    public static void main(String[] args) {
+    public static void run() {
 
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();

@@ -1,4 +1,4 @@
-package io.github.narahsouzadev.coinflip;
+package io.github.narahsouzadev.games;
 import java.util.Random;
 import java.util.Scanner;
 

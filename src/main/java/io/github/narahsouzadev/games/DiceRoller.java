@@ -9,17 +9,24 @@ public class DiceRoller {
         Random random = new Random();
 
         System.out.println("DICE ROLLER");
-        System.out.println("Press 'Enter' to roll de dice");
+        System.out.println("Press 'Enter' to roll de dice.");
+        System.out.println("Type 'q' and press 'Enter' to quit.");
 
-        String input = scanner.nextLine();
+        boolean running = true;
 
-        if (input.isEmpty()) {
-            int dice = random.nextInt(6);
-            int diceResult = dice + 1;
+        while (running) {
+            String input = scanner.nextLine();
 
-            System.out.println("Result: " + diceResult + " \uD83C\uDFB2");
-        } else {
-            System.out.println("Invalid option! ⚠");
+            if (input.isEmpty()) {
+                int dice = random.nextInt(6);
+                int diceResult = dice + 1;
+                System.out.println("Result: " + diceResult + " \uD83C\uDFB2");
+            } else if (input.equalsIgnoreCase("q")) {
+                System.out.println("Exiting Dice Roller.");
+                running = false;
+            } else {
+                System.out.println("Invalid command, try again.");
+            }
         }
     }
 }

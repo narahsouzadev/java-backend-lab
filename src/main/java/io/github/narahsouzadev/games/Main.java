@@ -27,7 +27,7 @@ public class Main {
             switch (input) {
                 case 1 -> CoinFlip.run(scanner);
                 case 2 -> DiceRoller.run(scanner);
-                case 3 -> System.out.println("3 - Guess The Number");
+                case 3 -> GuessTheNumber.run(scanner);
                 case 0 -> {
                     System.out.println("Goodbye!");
                     scanner.close();

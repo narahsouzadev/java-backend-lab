@@ -9,7 +9,7 @@ public class Main {
         boolean running = true;
 
         while (running) {
-            System.out.println("What do you want to play?");
+            System.out.println("\nWhat do you want to play?");
             System.out.println("1 - Coin Flip");
             System.out.println("2 - Dice Roller");
             System.out.println("3 - Guess The Number");

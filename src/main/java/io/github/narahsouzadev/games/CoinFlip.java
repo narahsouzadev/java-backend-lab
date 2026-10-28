@@ -9,36 +9,28 @@ public class CoinFlip {
         Scanner scanner = new Scanner (System.in);
 
         System.out.println("COIN FLIP");
+        System.out.println("Press 'Enter' to roll de dice.");
+        System.out.println("Type 'q' and press 'Enter' to quit.");
 
-        while (true) {
-            boolean isHeads = random.nextBoolean();
+        boolean running = true;
 
-            if (isHeads) {
-                System.out.println("Result: \uD83E\uDE99 HEADS");
+        while (running) {
+
+            String input = scanner.nextLine();
+
+            if (input.isEmpty()) {
+                boolean isHeads = random.nextBoolean();
+
+                if (isHeads) {
+                    System.out.println("Result: HEADS \uD83E\uDE99");
+                } else {
+                    System.out.println("Result: TAILS \uD83E\uDE99 ");
+                }
+            } else if (input.equalsIgnoreCase("q")) {
+                System.out.println("Exiting Coin Flip");
+                running = false;
             } else {
-                System.out.println("Result: \uD83E\uDE99 TAILS");
-            }
-
-            System.out.println("Flip the coin again? ");
-            System.out.println("1 - Yes");
-            System.out.println("2 - No");
-
-            if (!scanner.hasNextInt()) {
-                System.out.println("Invalid option! ⚠");
-                return;
-            }
-
-            int option = scanner.nextInt();
-
-            switch (option) {
-                case 1:
-                    break;
-                case 2:
-                    System.out.println("Goodbye!");
-                    return;
-                default:
-                    System.out.println("Invalid option! ⚠");
-                    return;
+                System.out.println("Invalid command, try again.");
             }
         }
     }

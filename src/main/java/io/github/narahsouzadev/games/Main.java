@@ -14,6 +14,13 @@ public class Main {
 
         int input = scanner.nextInt();
 
+        switch (input) {
+            case 1 -> System.out.println("1 - Coin Flip");
+            case 2 -> DiceRoller.run();
+            case 3 -> System.out.println("3 - Guess The Number");
+            default -> System.out.println("Invalid option! ⚠");
+        }
+
         scanner.close();
     }
 }

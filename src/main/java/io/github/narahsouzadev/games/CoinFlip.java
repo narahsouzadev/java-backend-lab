@@ -8,8 +8,7 @@ public class CoinFlip {
         Random random = new Random();
 
         System.out.println("COIN FLIP");
-        System.out.println("Press 'Enter' to flip the coin.");
-        System.out.println("Type 'q' and press 'Enter' to quit.");
+        System.out.println("Press 'Enter' to flip the coin or '0' to return.");
 
         boolean running = true;
 
@@ -25,8 +24,7 @@ public class CoinFlip {
                 } else {
                     System.out.println("Result: TAILS \uD83E\uDE99 ");
                 }
-            } else if (input.equalsIgnoreCase("q")) {
-                System.out.println("Exiting Coin Flip");
+            } else if (input.equals("0")) {
                 running = false;
             } else {
                 System.out.println("Invalid command, try again.");

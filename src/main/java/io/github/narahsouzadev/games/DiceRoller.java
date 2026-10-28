@@ -8,8 +8,7 @@ public class DiceRoller {
         Random random = new Random();
 
         System.out.println("DICE ROLLER");
-        System.out.println("Press 'Enter' to roll de dice.");
-        System.out.println("Type 'q' and press 'Enter' to quit.");
+        System.out.println("Press 'Enter' to roll the dice or '0' to return.");
 
         boolean running = true;
 
@@ -20,8 +19,7 @@ public class DiceRoller {
                 int dice = random.nextInt(6);
                 int diceResult = dice + 1;
                 System.out.println("Result: " + diceResult + " \uD83C\uDFB2");
-            } else if (input.equalsIgnoreCase("q")) {
-                System.out.println("Exiting Dice Roller.");
+            } else if (input.equals("0")) {
                 running = false;
             } else {
                 System.out.println("Invalid command, try again.");

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Welcome to Java CLI Games!");
+        System.out.println("\nWelcome to Java CLI Games!");
 
         Scanner scanner = new Scanner(System.in);
         boolean running = true;
@@ -13,8 +13,7 @@ public class Main {
             System.out.println("1 - Coin Flip");
             System.out.println("2 - Dice Roller");
             System.out.println("3 - Guess The Number");
-            System.out.println("4 - Quit");
-            System.out.println("Enter the game number: ");
+            System.out.println("Enter the game number or '0' to exit: ");
 
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid command, try again.");
@@ -28,8 +27,8 @@ public class Main {
                 case 1 -> CoinFlip.run(scanner);
                 case 2 -> DiceRoller.run(scanner);
                 case 3 -> System.out.println("3 - Guess The Number");
-                case 4 -> {
-                    System.out.println("Exiting Java CLI Games.");
+                case 0 -> {
+                    System.out.println("Goodbye!");
                     scanner.close();
                     running = false;
                 }

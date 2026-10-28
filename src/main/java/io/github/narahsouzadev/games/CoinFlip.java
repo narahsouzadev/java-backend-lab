@@ -3,10 +3,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class CoinFlip {
-    public static void run() {
+    public static void run(Scanner scanner) {
 
         Random random = new Random();
-        Scanner scanner = new Scanner (System.in);
 
         System.out.println("COIN FLIP");
         System.out.println("Press 'Enter' to flip the coin.");

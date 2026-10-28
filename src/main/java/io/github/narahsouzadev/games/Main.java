@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to Java CLI Games!");
 
+        Scanner scanner = new Scanner(System.in);
         boolean running = true;
 
         while (running) {
@@ -15,8 +16,6 @@ public class Main {
             System.out.println("4 - Quit");
             System.out.println("Enter the game number: ");
 
-            Scanner scanner = new Scanner(System.in);
-
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid command, try again.");
                 scanner.close();
@@ -26,8 +25,8 @@ public class Main {
             int input = scanner.nextInt();
 
             switch (input) {
-                case 1 -> CoinFlip.run();
-                case 2 -> DiceRoller.run();
+                case 1 -> CoinFlip.run(scanner);
+                case 2 -> DiceRoller.run(scanner);
                 case 3 -> System.out.println("3 - Guess The Number");
                 case 4 -> {
                     System.out.println("Exiting Java CLI Games.");

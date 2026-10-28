@@ -8,29 +8,20 @@ public class CoinFlip {
         Random random = new Random();
         Scanner scanner = new Scanner (System.in);
 
-        String dividingLine = "----------------------";
-
-        System.out.println(dividingLine);
-        System.out.println("|     COIN FLIP      |");
-        System.out.println(dividingLine);
+        System.out.println("COIN FLIP");
 
         while (true) {
             boolean isHeads = random.nextBoolean();
 
-            System.out.println(dividingLine);
-            System.out.println(" Flipping the coin...");
-            System.out.println(dividingLine);
-
             if (isHeads) {
-                System.out.println("|  Result: \uD83E\uDE99 HEADS  |");
+                System.out.println("Result: \uD83E\uDE99 HEADS");
             } else {
-                System.out.println("|  Result: \uD83E\uDE99 TAILS  |");
+                System.out.println("Result: \uD83E\uDE99 TAILS");
             }
-            System.out.println(dividingLine);
-            System.out.println(dividingLine);
-            System.out.println(" Flip the coin again? ");
-            System.out.println("    1.YES | 2.NO ");
-            System.out.println(dividingLine);
+
+            System.out.println("Flip the coin again? ");
+            System.out.println("1 - Yes");
+            System.out.println("2 - No");
 
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid option! ⚠");
@@ -43,9 +34,7 @@ public class CoinFlip {
                 case 1:
                     break;
                 case 2:
-                    System.out.println(dividingLine);
-                    System.out.println("       Goodbye!");
-                    System.out.println(dividingLine);
+                    System.out.println("Goodbye!");
                     return;
                 default:
                     System.out.println("Invalid option! ⚠");

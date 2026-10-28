@@ -17,6 +17,12 @@ public class Main {
 
             Scanner scanner = new Scanner(System.in);
 
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid command, try again.");
+                scanner.close();
+                return;
+            }
+
             int input = scanner.nextInt();
 
             switch (input) {

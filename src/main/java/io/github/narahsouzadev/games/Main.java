@@ -22,6 +22,7 @@ public class Main {
             }
 
             int input = scanner.nextInt();
+            scanner.nextLine();
 
             switch (input) {
                 case 1 -> CoinFlip.run(scanner);

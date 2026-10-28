@@ -9,7 +9,7 @@ public class CoinFlip {
         Scanner scanner = new Scanner (System.in);
 
         System.out.println("COIN FLIP");
-        System.out.println("Press 'Enter' to roll de dice.");
+        System.out.println("Press 'Enter' to flip the coin.");
         System.out.println("Type 'q' and press 'Enter' to quit.");
 
         boolean running = true;

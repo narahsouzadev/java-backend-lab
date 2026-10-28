@@ -34,7 +34,6 @@ public class CoinFlip {
 
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid option! ⚠");
-                scanner.close();
                 return;
             }
 
@@ -47,11 +46,9 @@ public class CoinFlip {
                     System.out.println(dividingLine);
                     System.out.println("       Goodbye!");
                     System.out.println(dividingLine);
-                    scanner.close();
                     return;
                 default:
                     System.out.println("Invalid option! ⚠");
-                    scanner.close();
                     return;
             }
         }

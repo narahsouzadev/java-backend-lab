@@ -21,6 +21,5 @@ public class DiceRoller {
         } else {
             System.out.println("Invalid option! ⚠");
         }
-        scanner.close();
     }
 }

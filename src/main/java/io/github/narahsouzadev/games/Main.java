@@ -17,12 +17,12 @@ public class Main {
 
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid command, try again.");
-                scanner.next();
+                scanner.next(); // Consumes the invalid token to prevent an infinite loop
                 continue;
             }
 
             int input = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine(); // Consumes the remaining newline in the buffer
 
             switch (input) {
                 case 1 -> CoinFlip.run(scanner);

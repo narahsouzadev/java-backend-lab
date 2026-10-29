@@ -23,7 +23,7 @@ public class GuessTheNumber {
             }
 
             int input = scanner.nextInt();
-            scanner.nextLine();
+            scanner.nextLine(); // Consumes the remaining newline in the buffer
 
             if (input == 0) {
                 System.out.println("Exiting Guess The Number.");

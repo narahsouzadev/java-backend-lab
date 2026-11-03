@@ -10,36 +10,39 @@ public class BMICalculator {
         String invalidValueMessage = "The value entered must be greater than zero.";
 
         System.out.println("Body Mass Index (BMI)");
+        double weight = 0;
+        while (true) {
+            System.out.println("Enter your weight in kilograms: ");
 
-        System.out.println("Enter your weight in kilograms: ");
+            if (scanner.hasNextDouble()) {
+                weight = scanner.nextDouble();
+                if (weight > 0) {
+                    break;
+                }
+                System.out.println(invalidValueMessage);
+            } else {
+                System.out.println(invalidInputMessage);
+                scanner.next();
+            }
 
-        if (!scanner.hasNextDouble()) {
-            System.out.println(invalidInputMessage);
-            scanner.next();
-            return;
         }
 
-        double weight = scanner.nextDouble();
+        int height = 0;
+        while (true) {
+            System.out.println("Enter your height in centimeters: ");
 
-        if (weight <=0) {
-            System.out.println(invalidValueMessage);
-            return;
+            if (scanner.hasNextInt()) {
+                height = scanner.nextInt();
+                if (height > 0) {
+                    break;
+                }
+                System.out.println(invalidValueMessage);
+            } else {
+                System.out.println(invalidInputMessage);
+                scanner.next();
+            }
+
         }
-
-        System.out.println("Enter your height in centimeters: ");
-
-        if (!scanner.hasNextInt()) {
-            System.out.println(invalidInputMessage);
-            scanner.next();
-            return;
-        }
-        int height = scanner.nextInt();
-
-         if (height <=0) {
-            System.out.println(invalidValueMessage);
-            return;
-         }
-
          double heightInMeters = height / 100.0;
          double bmi = weight / (heightInMeters * heightInMeters); // Body Mass Index
 

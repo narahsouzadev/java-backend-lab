@@ -1,4 +1,6 @@
 package io.github.narahsouzadev.calculators;
+import io.github.narahsouzadev.games.CoinFlip;
+
 import java.util.Scanner;
 
 public class Main {
@@ -23,7 +25,7 @@ public class Main {
             scanner.nextLine(); // Consumes the remaining newline in the buffer
 
             switch (input) {
-                case 1 -> System.out.println("1 - Body Mass Index (BMI)");
+                case 1 -> BMICalculator.run(scanner);
                 case 0 -> {
                     System.out.println("Goodbye!");
                     scanner.close();

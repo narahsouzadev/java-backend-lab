@@ -3,8 +3,7 @@ import java.util.Scanner;
 import java.util.Locale;
 
 public class BMICalculator {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void run(Scanner scanner) {
         scanner.useLocale(Locale.US);
 
         String dividingLine = "============================================";

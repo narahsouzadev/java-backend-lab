@@ -1,4 +1,4 @@
-package io.github.narahsouzadev.bmicalculator;
+package io.github.narahsouzadev.calculators;
 import java.util.Scanner;
 import java.util.Locale;
 

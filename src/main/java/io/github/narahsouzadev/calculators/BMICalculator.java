@@ -15,7 +15,7 @@ public class BMICalculator {
 
         if (!scanner.hasNextDouble()) {
             System.out.println(invalidInputMessage);
-            scanner.close();
+            scanner.next();
             return;
         }
 
@@ -23,7 +23,6 @@ public class BMICalculator {
 
         if (weight <=0) {
             System.out.println(invalidValueMessage);
-            scanner.close();
             return;
         }
 
@@ -31,14 +30,13 @@ public class BMICalculator {
 
         if (!scanner.hasNextInt()) {
             System.out.println(invalidInputMessage);
-            scanner.close();
+            scanner.next();
             return;
         }
         int height = scanner.nextInt();
 
          if (height <=0) {
             System.out.println(invalidValueMessage);
-            scanner.close();
             return;
          }
 
@@ -56,7 +54,5 @@ public class BMICalculator {
          } else {
             System.out.println("30.0 or higher: Obesity.");
          }
-
-         scanner.close();
     }
 }

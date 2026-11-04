@@ -1,5 +1,4 @@
 package io.github.narahsouzadev.calculators;
-import io.github.narahsouzadev.games.CoinFlip;
 
 import java.util.Scanner;
 
@@ -12,7 +11,8 @@ public class Main {
 
         while (running) {
             System.out.println("\nWhat do you want to calculate?");
-            System.out.println("1 - Body Mass Index (BMI)");
+            System.out.println("1 - Basic Operations");
+            System.out.println("2 - Body Mass Index (BMI)");
             System.out.println("Enter the option number or '0' to exit: ");
 
             if (!scanner.hasNextInt()) {
@@ -25,7 +25,8 @@ public class Main {
             scanner.nextLine(); // Consumes the remaining newline in the buffer
 
             switch (input) {
-                case 1 -> BMICalculator.run(scanner);
+                case 1 -> BasicOperations.run(scanner);
+                case 2 -> BMICalculator.run(scanner);
                 case 0 -> {
                     System.out.println("Goodbye!");
                     scanner.close();

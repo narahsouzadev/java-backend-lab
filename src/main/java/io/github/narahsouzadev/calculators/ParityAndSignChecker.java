@@ -2,14 +2,13 @@ package io.github.narahsouzadev.calculators;
 import java.util.Scanner;
 
 public class ParityAndSignChecker {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void run(Scanner scanner) {
 
         System.out.println("Enter a number: ");
 
         if (!scanner.hasNextInt()) {
             System.out.println("Invalid input. Please enter an integer.");
-            scanner.close();
+            scanner.next(); // Consumes the invalid token to prevent an infinite loop
             return;
         }
 
@@ -39,6 +38,5 @@ public class ParityAndSignChecker {
         }
 
         System.out.println("The number entered is " + parity + " and is " + sign);
-        scanner.close();
     }
 }

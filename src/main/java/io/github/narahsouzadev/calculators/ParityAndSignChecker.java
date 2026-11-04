@@ -1,4 +1,4 @@
-package io.github.narahsouzadev.parityandsignchecker;
+package io.github.narahsouzadev.calculators;
 import java.util.Scanner;
 
 public class ParityAndSignChecker {

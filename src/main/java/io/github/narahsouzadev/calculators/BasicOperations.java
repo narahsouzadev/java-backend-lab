@@ -13,6 +13,7 @@ public class BasicOperations {
             System.out.println("4 - Division");
             System.out.println("Enter the option number or '0' to exit: ");
 
+            // Select operation
             if (!scanner.hasNextInt()) {
                 System.out.println("Invalid command, try again.");
                 scanner.next(); // Consumes the invalid token to prevent an infinite loop
@@ -27,10 +28,11 @@ public class BasicOperations {
                 return;
             }
 
+            // First number
             System.out.println("Enter the first number");
 
             if (!scanner.hasNextDouble()) {
-                System.out.println("Invalid command, try again.");
+                System.out.println("Invalid input, please try again.");
                 scanner.next(); // Consumes the invalid token to prevent an infinite loop
                 continue;
             }
@@ -38,10 +40,11 @@ public class BasicOperations {
             double firstNumber = scanner.nextDouble();
             scanner.nextLine(); // Consumes the remaining newline in the buffer
 
+            // Second number
             System.out.println("Enter the second number");
 
             if (!scanner.hasNextDouble()) {
-                System.out.println("Invalid command, try again.");
+                System.out.println("Invalid input, please try again.");
                 scanner.next(); // Consumes the invalid token to prevent an infinite loop
                 continue;
             }
@@ -49,6 +52,7 @@ public class BasicOperations {
             double secondNumber = scanner.nextDouble();
             scanner.nextLine(); // Consumes the remaining newline in the buffer
 
+            // Operations
             double result = 0.0;
 
             switch (input) {

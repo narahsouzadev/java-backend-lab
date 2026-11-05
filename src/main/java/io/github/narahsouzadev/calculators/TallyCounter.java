@@ -2,8 +2,7 @@ package io.github.narahsouzadev.calculators;
 import java.util.Scanner;
 
 public class TallyCounter {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public static void run(Scanner scanner) {
         int count = 0;
 
         System.out.println("=======================================");
@@ -39,7 +38,5 @@ public class TallyCounter {
                 System.out.println("Invalid command, try again.");
             }
         }
-
-        scanner.close();
     }
 }

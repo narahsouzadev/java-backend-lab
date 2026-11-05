@@ -11,7 +11,7 @@ public class BasicOperations {
             System.out.println("2 - Subtraction");
             System.out.println("3 - Multiplication");
             System.out.println("4 - Division");
-            System.out.println("Enter the option number or '0' to exit: ");
+            System.out.println("Enter the option number or '0' to return.");
 
             // Select operation
             if (!scanner.hasNextInt()) {
@@ -76,7 +76,7 @@ public class BasicOperations {
                         System.out.println("Result = " + result);
                     }
                 }
-                default -> System.out.println("Invalid command, try again.");
+                default -> System.out.println("Invalid option, try again.");
             }
         }
     }

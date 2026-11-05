@@ -1,4 +1,4 @@
-package io.github.narahsouzadev.tallycounter;
+package io.github.narahsouzadev.calculators;
 import java.util.Scanner;
 
 public class TallyCounter {

@@ -25,8 +25,22 @@ public class AverageCalculator {
                 return;
             }
 
+            System.out.println("\nHow many values do you want to calculate the average of?");
+
+            if (!scanner.hasNextInt()) {
+                System.out.println("Invalid input, please try again.");
+                scanner.next(); // Consumes the invalid token to prevent an infinite loop
+                continue;
+            }
+
+            int valuesQuantity = scanner.nextInt();
+            double valuesSum = 0.0;
+
             switch (input) {
-                case 1 -> System.out.println("\nCalculation of Arithmetic Mean");
+                case 1 -> {
+                    System.out.println("Values Quantity: " + valuesQuantity);
+                    System.out.println("Values Sum: " + valuesSum);
+                }
                 case 2 -> System.out.println("\nCalculation of Weighted Average");
                 default -> System.out.println("\nInvalid option, try again.");
             }

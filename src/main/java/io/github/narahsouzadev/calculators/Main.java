@@ -13,8 +13,9 @@ public class Main {
             System.out.println("\nWhat do you want to calculate?");
             System.out.println("1 - Basic Operations");
             System.out.println("2 - Parity and Sign Checker");
-            System.out.println("3 - Tally Counter");
-            System.out.println("4 - Body Mass Index (BMI)");
+            System.out.println("3 - Average Calculator");
+            System.out.println("4 - Tally Counter");
+            System.out.println("5 - Body Mass Index (BMI)");
             System.out.println("Enter the option number or '0' to exit: ");
 
             if (!scanner.hasNextInt()) {
@@ -29,8 +30,9 @@ public class Main {
             switch (input) {
                 case 1 -> BasicOperations.run(scanner);
                 case 2 -> ParityAndSignChecker.run(scanner);
-                case 3 -> TallyCounter.run(scanner);
-                case 4 -> BMICalculator.run(scanner);
+                case 3 -> AverageCalculator.run(scanner);
+                case 4 -> TallyCounter.run(scanner);
+                case 5 -> BMICalculator.run(scanner);
                 case 0 -> {
                     System.out.println("Goodbye!");
                     scanner.close();

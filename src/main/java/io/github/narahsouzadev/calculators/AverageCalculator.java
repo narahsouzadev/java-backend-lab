@@ -25,32 +25,32 @@ public class AverageCalculator {
                 return;
             }
 
-            System.out.println("\nHow many values do you want to calculate the average of?");
-
-            if (!scanner.hasNextInt()) {
-                System.out.println("Invalid input, please try again.");
-                scanner.next(); // Consumes the invalid token to prevent an infinite loop
-                continue;
-            }
-
-            int valuesQuantity = scanner.nextInt();
-            double valuesSum = 0.0;
-
             switch (input) {
                 case 1 -> {
+                    System.out.println("\nHow many values do you want to calculate the average of?");
+
+                    if (!scanner.hasNextInt()) {
+                        System.out.println("Invalid input, please try again.");
+                        scanner.next(); // Consumes the invalid token to prevent an infinite loop
+                        continue;
+                    }
+
+                    int valuesQuantity = scanner.nextInt();
+                    double valuesSum = 0.0;
 
                     for (int i = 1; i <= valuesQuantity; i++) {
                         System.out.println("Enter the " + i + "º value: ");
                         double nextValue = scanner.nextDouble();
                         valuesSum += nextValue;
                     }
+                    double average = valuesSum / valuesQuantity;
+                    System.out.println("Average: " + average);
                 }
                 case 2 -> System.out.println("\nCalculation of Weighted Average");
                 default -> System.out.println("\nInvalid option, try again.");
             }
 
-            double average = valuesSum / valuesQuantity;
-            System.out.println("Average: " + average);
+
         }
     }
 }

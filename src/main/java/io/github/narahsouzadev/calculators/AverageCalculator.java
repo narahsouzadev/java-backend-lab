@@ -36,6 +36,12 @@ public class AverageCalculator {
                     }
 
                     int valuesQuantity = scanner.nextInt();
+
+                    if (valuesQuantity < 2) {
+                        System.out.println("The quantity must be greater than one.");
+                        continue;
+                    }
+
                     double valuesSum = 0.0;
 
                     for (int i = 1; i <= valuesQuantity; i++) {

@@ -46,8 +46,15 @@ public class AverageCalculator {
 
                     for (int i = 1; i <= valuesQuantity; i++) {
                         System.out.println("Enter the " + i + "º value: ");
-                        double nextValue = scanner.nextDouble();
-                        valuesSum += nextValue;
+
+                        if (scanner.hasNextDouble()) {
+                            double nextValue = scanner.nextDouble();
+                            valuesSum += nextValue;
+                        } else {
+                            scanner.next();
+                            System.out.println("Invalid input, please try again.");
+                            break;
+                        }
                     }
                     double average = valuesSum / valuesQuantity;
                     System.out.println("Average: " + average);

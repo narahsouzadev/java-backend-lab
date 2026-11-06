@@ -38,12 +38,19 @@ public class AverageCalculator {
 
             switch (input) {
                 case 1 -> {
-                    System.out.println("Values Quantity: " + valuesQuantity);
-                    System.out.println("Values Sum: " + valuesSum);
+
+                    for (int i = 1; i <= valuesQuantity; i++) {
+                        System.out.println("Enter the " + i + "º value: ");
+                        double nextValue = scanner.nextDouble();
+                        valuesSum += nextValue;
+                    }
                 }
                 case 2 -> System.out.println("\nCalculation of Weighted Average");
                 default -> System.out.println("\nInvalid option, try again.");
             }
+
+            double average = valuesSum / valuesQuantity;
+            System.out.println("Average: " + average);
         }
     }
 }

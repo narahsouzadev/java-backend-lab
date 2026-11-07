@@ -47,7 +47,7 @@ public class AverageCalculator {
                     boolean isCalculationValid = true;
 
                     for (int i = 1; i <= valuesQuantity; i++) {
-                        System.out.println("Enter the " + i + "º value: ");
+                        System.out.println("Enter the value " + i + ": ");
 
                         if (scanner.hasNextDouble()) {
                             double nextValue = scanner.nextDouble();
